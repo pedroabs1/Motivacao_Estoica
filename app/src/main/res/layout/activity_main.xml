@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/epictetus"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/frases"
+        android:layout_width="334dp"
+        android:layout_height="452dp"
+        android:alpha="30"
+        android:autoSizeMaxTextSize="150sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeStepGranularity="20sp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gerarFrases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        tools:targetApi="o"></TextView>
+
+    <Button
+        android:id="@+id/gerarFrases"
+        android:layout_width="165dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/gerar_frases"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979"></Button>
+
+    <ImageButton
+        android:id="@+id/bt_Preferencias"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+</android.support.constraint.ConstraintLayout>
